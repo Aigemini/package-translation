@@ -1,0 +1,29 @@
+{
+    "name": "fx/translation",
+    "description": "translation",
+    "authors": [
+        {
+            "name": "Wangyuqiang",
+            "email": "719404171@qq.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1",
+        "stichoza/google-translate-php": "^4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fx\\Translation\\Providers\\FxTranslationServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Fx\\Translation\\": "src/"
+        }
+    }
+}
